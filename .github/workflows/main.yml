@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Hello world action step
-        uses: ./.github/workflows/main.yml # Uses an action in the root directory
+        uses: ../.github/workflows/main.yml # Uses an action in the root directory
         id: hello
       # Use the output from the `hello` step
       - name: Get the output time
